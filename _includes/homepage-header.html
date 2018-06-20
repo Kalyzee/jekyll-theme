@@ -1,0 +1,12 @@
+<header>
+  <section class="page-header">
+    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/imgs/logo.png" /></a>
+    <h1 class="project-name">Kast Documentation</h1>
+    <h2 class="project-tagline">Build smart, customized and wireless multimedia workspace</h2>
+
+    {% for button in site.homepage.buttons %}
+      <a href="{{ button.url }}" class="btn">{{ button.title }}</a>
+    {% endfor %}
+
+  </section>
+</header>
